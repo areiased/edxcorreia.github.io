@@ -5,6 +5,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 body {
   /* background-image: url("/forest.jpg"); */
@@ -31,12 +32,15 @@ $secondary-text-color: rgb(122, 122, 122);
 $disabled-text-color: rgb(196, 196, 196);
 $main-bg-color: #e7eaec;
 $button-hover-color: rgb(247, 249, 252);
+$main-link-color: rgb(80,90,110);
+$box-shadow-normal: 2px 2px 3px #c9cccf, -2px -2px 3px #ffffff;
+$box-shadow-inset: inset 2px 2px 3px #c9cccf, inset -2px -2px 3px #ffffff;
 
 
 
 a:link,
 a:visited {
-  color: $main-text-color;
+  color: $main-link-color;
   font-style: normal;
   text-decoration: none;
 }

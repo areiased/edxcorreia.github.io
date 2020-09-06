@@ -1,0 +1,179 @@
+@import "../../styles.scss";
+
+@keyframes SlideUp {
+    0% {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 240%;
+    background: linear-gradient(45deg, rgb(22, 83, 197), rgb(52, 210, 238));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.8;
+}
+
+h2 {
+    font-size: 140%;
+    font-weight: 400;
+    background: linear-gradient(45deg, rgb(22, 83, 197), rgb(52, 210, 238));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutmain-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    opacity: 0;
+    animation: 0.5s SlideUp 0s forwards;
+}
+
+.aboutpage-content {
+    width: 95%;
+    margin: 90px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-title-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95vw;
+    opacity: 0;
+    animation: 0.5s SlideUp forwards 0s;
+}
+
+.main-title-div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 160px;
+    flex-grow: 1;
+    border-radius: 20px;
+    background: $main-bg-gradient-flat;
+    box-shadow: 6px 6px 8px #c9cccf, -6px -6px 8px #ffffff;
+}
+
+.secondary-title-div {
+    border-radius: 20px;
+}
+
+.main-title {
+    font-family: "Noto Sans";
+    font-size: 45px;
+    font-weight: 700;
+    background: linear-gradient(45deg, rgb(43, 105, 219), rgb(107, 204, 221));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 20px;
+    line-height: 1.2;
+    margin: 20px;
+}
+
+.secondary-title {
+    line-height: 1.2;
+    margin: -20px 20px 20px 20px;
+    font-size: 12px;
+    font-weight: 400;
+    background: linear-gradient(45deg, rgb(180, 180, 180), rgb(122, 122, 122));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.side-title-div {
+    margin: 10px;
+    min-height: 160px;
+    flex-grow: 5;
+    border-radius: 20px;
+    background: $main-bg-gradient-flat;
+    box-shadow: 6px 6px 8px #c9cccf, -6px -6px 8px #ffffff;
+    padding: 0px 40px;
+    font-size: 16px;
+
+    h2 {
+        padding: 20px 0 0 0;
+    }
+
+    .contact-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .contactme-button-email,
+        .contactme-button-linkedin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 10px 10px 0;
+            color: $main-bg-color;
+            font-size: 12px;
+            max-width: fit-content;
+            padding: 0 12px;
+            height: 28px;
+            border-radius: 5px;
+            background: $button-primary-purple-gradient;
+            box-shadow: 3px 3px 6px #bdbec0, -3px -3px 6px #ffffff;
+            transition: all 0.5s;
+        }
+
+        .contactme-button-linkedin {
+            background: $button-primary-lightblue-gradient;
+        }
+
+        .contactme-button-email:active {
+            box-shadow: inset 3px 3px 6px $button-primary-purple-flat,
+                inset -3px -3px 6px lighten($button-primary-purple-flat, 15%);
+            transition: all 0.2s;
+        }
+        .contactme-button-linkedin:active {
+            box-shadow: inset 3px 3px 6px $button-primary-lightblue-flat,
+                inset -3px -3px 6px lighten($button-primary-lightblue-flat, 15%);
+            transition: all 0.2s;
+        }
+    }
+}
+
+.cards-maindiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    animation: 0.5s SlideUp forwards 0.2s;
+
+    .card-div {
+        display: flex;
+        flex-grow: 1;
+        margin: 10px;
+        border-radius: 20px;
+        background: $main-bg-gradient-flat;
+        box-shadow: 6px 6px 8px #c9cccf, -6px -6px 8px #ffffff;
+        min-width: 400px;
+        transition: all 0.2s;
+    }
+}
