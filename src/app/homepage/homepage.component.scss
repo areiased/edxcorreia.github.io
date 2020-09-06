@@ -71,7 +71,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    content-visibility: auto;
+    content-visibility: auto; // new CSS property that only works on the newest browsers
 }
 
 .top-title-div {
