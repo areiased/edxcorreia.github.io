@@ -31,16 +31,19 @@ $main-text-color: rgb(17, 12, 48);
 $secondary-text-color: rgb(122, 122, 122);
 $disabled-text-color: rgb(196, 196, 196);
 $main-bg-color: #e7eaec;
-$button-hover-color: rgb(247, 249, 252);
+$button-hover-color: rgb(240, 240, 240);
 $main-link-color: rgb(80,90,110);
 $box-shadow-normal: 2px 2px 3px #c9cccf, -2px -2px 3px #ffffff;
 $box-shadow-inset: inset 2px 2px 3px #c9cccf, inset -2px -2px 3px #ffffff;
 
 
 
+a,
 a:link,
 a:visited {
   color: $main-link-color;
   font-style: normal;
   text-decoration: none;
+  transition: 0.5s all;
 }
+

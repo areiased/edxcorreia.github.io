@@ -54,8 +54,10 @@
   width: 100vw;
   position: fixed;
   opacity: 1;
-  background: $main-bg-gradient-flat;
-  box-shadow: inset 0px -3px 4px #ffffff;
+  // background: $main-bg-gradient-flat;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0px 2px 3px rgba(255,255,255,0.4);
 }
 
 .nav-bar {
@@ -91,7 +93,9 @@
   height: 40px;
   font-style: normal;
   color: $main-link-color;
-  background: $main-bg-color;
+  background-color: rgba(255,255,255,0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   box-shadow: $box-shadow-normal;
   opacity: 0;
   transition: all 0.5s;
@@ -238,7 +242,10 @@
   padding: 10px;
   margin: 0px 0 0 6px;
   list-style-type: none;
-  background: $main-bg-gradient-flat;
+  // background: $main-bg-gradient-flat;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
   box-shadow: $box-shadow-normal;
 }
 
@@ -269,7 +276,7 @@
 }
 
 .dd-menu li:hover {
-  background-color: rgba(214, 214, 214, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   transition: all 0.2s;
 }
 
