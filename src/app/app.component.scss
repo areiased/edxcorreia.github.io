@@ -284,7 +284,31 @@
   display: block;
   margin: -10px -20px;
   padding: 10px 20px;
-  transition: all 0.2s;
+  transition: 0.3s all;
+}
+
+.soon-text {
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+  margin-top: -20px;
+  transition: 0.3s opacity;
+}
+
+.soon-link:active,
+.soon-link:hover ~ .soon-text {
+  opacity: 1;
+  transition: 0.1s all;
+}
+
+.soon-link {
+  opacity: 1;
+  transition: 0.5s opacity;
+}
+
+.soon-link:active,
+.soon-link:hover {
+  opacity: 0;
 }
 
 .dd-menu li.divider {

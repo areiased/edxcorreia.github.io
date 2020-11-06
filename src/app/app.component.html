@@ -5,12 +5,12 @@
 </div>
 <div class="navbar-container">
   <div class="nav-bar">
-    <div><a class="start-link" [routerLink]="[ '' ]">Home</a><a [routerLink]="[ '' ]" class="material-icons navicon-home">home</a></div>
+    <div><a class="start-link" matRipple [routerLink]="[ '' ]">Home</a><a [routerLink]="[ '' ]" matRipple class="material-icons navicon-home">home</a></div>
     <div class="portfolio-link">
       <label class="dropdown">
         <input type="checkbox" class="dd-input" id="test" />
-        <span class="material-icons navicon-portfolio">style</span>
-        <div class="dd-button">Portfolio
+        <span matRipple class="material-icons navicon-portfolio">style</span>
+        <div matRipple class="dd-button">Portfolio
           <a class="material-icons" 
                 style="display:flex; justify-self: flex-end; margin-left: 5px; margin-right: -15px;">
             keyboard_arrow_down
@@ -26,35 +26,36 @@
               </a
             >
           </li> -->
-          <li>
+          <li matRipple>
             <a
               class="nav-button-link"
-              [routerLink]="[ '' ]"
+              [routerLink]="[ 'aboutwebsite' ]"
               >Ed. Correia Portfolio (This Website)</a
             >
           </li>
-          <li>
+          <li matRipple>
             <a
               class="nav-button-link"
-              href="http://www.vintecafes.epizy.com" target="_blank()">
+              href="https://20cafes.com" target="_blank()">
               20Cafes/dia Official Page ☕️
             </a>
           </li>
-          <li>
+          <li matRipple>
             <a
               class="nav-button-link"
               href="http://bookslibrary.eduardocorreia.epizy.com" target="_blank()"
               >Books Library (Frontend Project)</a
             >
           </li>
-          <li>
+          <li matRipple>
             <a
-              class="nav-button-link"
-              href="http://bookslibrary.eduardocorreia.epizy.com" target="_blank()"
+              class="nav-button-link soon-link"
+              href="#"
               >20Cafes/dia Forum (Fullstack Project)</a
             >
+            <nav class="soon-text">Soon!</nav>
           </li>
-          <li>
+          <li matRipple>
             <a
               class="nav-button-link"
               href="http://github.com/areiased" target="_blank()"
@@ -65,16 +66,16 @@
       </label>
     </div>
     <div>
-      <a class="about-link" [routerLink]="[ '/aboutpage' ]" routerLinkActive="current-route-button">About Me</a>
-      <a [routerLink]="[ '/aboutpage' ]" class="material-icons navicon-contact">mail</a>
+      <a class="about-link" [routerLink]="[ '/aboutpage' ]" matRipple routerLinkActive="current-route-button">About Me</a>
+      <a [routerLink]="[ '/aboutpage' ]" matRipple class="material-icons navicon-contact">mail</a>
     </div>
     <div>
-      <a class="contacts-link" [routerLink]="[ '/contactspage' ]" routerLinkActive="current-route-button">Contact</a>
-      <a [routerLink]="[ '/contactspage' ]" class="material-icons navicon-aboutme">perm_contact_calendar</a>
+      <a class="contacts-link" [routerLink]="[ '/contactspage' ]" matRipple routerLinkActive="current-route-button">Contact</a>
+      <a [routerLink]="[ '/contactspage' ]" matRipple class="material-icons navicon-aboutme">perm_contact_calendar</a>
     </div>
     <div>
-      <a class="aboutwebsite-link" [routerLink]="[ '#' ]" routerLinkActive="current-route-button">About This Website</a>
-      <a [routerLink]="[ '#' ]" class="material-icons navicon-info">info</a>
+      <a class="aboutwebsite-link" [routerLink]="[ 'aboutwebsite' ]" matRipple routerLinkActive="current-route-button">About This Website</a>
+      <a [routerLink]="[ 'aboutwebsite' ]" matRipple class="material-icons navicon-info">info</a>
     </div>
   </div>
 </div>
@@ -84,5 +85,5 @@
 </div>
 
 <div class="footer">
-  <p>(c) Copyright 2020 - Eduardo Correia - eduardocorreia.epizy.com</p>
+  <p>(c) Copyright 2020 - Eduardo Correia / 20cafes.com</p>
 </div>

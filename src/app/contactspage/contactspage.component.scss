@@ -188,6 +188,11 @@ h2 {
         transition: all 0.2s;
         overflow: hidden;
 
+        &:active {
+            box-shadow: inset 3px 3px 4px #c9cccf, inset -3px -3px 4px #ffffff;
+            transition: all 0.1s;
+        }
+
         .card-image {
             width: 100%;
             height: 300px;
