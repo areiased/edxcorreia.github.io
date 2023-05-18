@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Nunito', 'Noto Sans', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  /* background-image: url("/forest.jpg"); */
+  width: 100vw;
+  background: linear-gradient(135deg, #e7eaec, #ffffff);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Nunito", "Noto Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* DEFINIR AS CORES DA APP INTEIRA */
+
+$main-bg-gradient-flat: linear-gradient(145deg, #e7eaec, #ffffff);
+$main-bg-gradient-bump: linear-gradient(145deg, #ffffff, #e7e8e9);
+$button-primary-blue-gradient-flat: linear-gradient(145deg, #51b4ee, rgb(75, 113, 236));
+$button-primary-purple-flat: rgb(111, 113, 223);
+$button-primary-purple-gradient: linear-gradient(-145deg, rgb(111, 113, 223), #a5a4f8);
+$button-primary-lightblue-flat: rgb(93, 144, 255);
+$button-primary-lightblue-gradient: linear-gradient(-145deg, rgb(93, 144, 255), #95a4fa);
+$main-text-color: rgb(17, 12, 48);
+$secondary-text-color: rgb(122, 122, 122);
+$disabled-text-color: rgb(196, 196, 196);
+$main-bg-color: #e7eaec;
+$button-hover-color: rgb(240, 240, 240);
+$main-link-color: rgb(80,90,110);
+$box-shadow-normal: 2px 2px 3px #c9cccf, -2px -2px 3px #ffffff;
+$box-shadow-inset: inset 2px 2px 3px #c9cccf, inset -2px -2px 3px #ffffff;
+
+
+
+a,
+a:link,
+a:visited {
+  color: $main-link-color;
+  font-style: normal;
+  text-decoration: none;
+  transition: 0.5s all;
+}
+
